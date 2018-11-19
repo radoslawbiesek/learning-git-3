@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+h1 {
+    margin: 10px;
+    font-size: 42px;
+}
+p {
+    margin: 20px;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+p:first-of-type {
+    margin-top:60px;
+}
