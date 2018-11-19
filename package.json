@@ -1,4 +1,4 @@
-{
+npm{
   "name": "learning-npm",
   "version": "1.0.0",
   "main": "index.js",
@@ -15,9 +15,9 @@
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all s-watch:sass s-watch:autoprefixer",
-    "s-watch:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "s-watch:autoprefixer": "autoprefixer-cli css/style.css",
+    "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all sassprefixer:sass sassprefixer:autoprefixer",
+    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css",
     "watch:browsersync": "browser-sync start --server --files css/*.css *.html"
   },
   "keywords": [],
